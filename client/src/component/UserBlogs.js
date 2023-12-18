@@ -11,7 +11,7 @@ const UserBlogs = () => {
     try {
       setLoading(true);
       const id = localStorage.getItem("userId");
-      const { data } = await axios.get(`/api/v1/blog/user-blog/${id}`);
+      const { data } = await axios.get(`https://blog-app-9riq.onrender.com/api/v1/blog/user-blog/${id}`);
       if (data?.success) {
         // what ever return in blog controller we set the value
         setBlogs(data?.userBlog?.blogs);
