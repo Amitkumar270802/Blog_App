@@ -1,6 +1,6 @@
 {
   "name": "my-project",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://blog-app-9riq.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
