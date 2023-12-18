@@ -61,7 +61,7 @@ const CreateBlog = () => {
     console.log(inputs);
     try {
       setLoading(true);
-      const { data } = await axios.post("/api/v1/blog/create-blog", {
+      const { data } = await axios.post("https://blog-app-9riq.onrender.com/api/v1/blog/create-blog", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.image,
