@@ -60,7 +60,7 @@ const BlogDetails = () => {
 
   const getBlogDetails = async () => {
     try {
-      const { data } = await axios.get(`/api/v1/blog/get-blog/${id}`);
+      const { data } = await axios.get(`https://blog-app-9riq.onrender.com/api/v1/blog/get-blog/${id}`);
       if (data?.success) {
         console.log(data?.blog);
         setBlog(data?.blog);
@@ -84,7 +84,7 @@ const BlogDetails = () => {
     isupload ? (inputs.image = new_url) : (inputs.image = inputs.image);
     console.log(inputs);
     try {
-      const { data } = await axios.put(`/api/v1/blog/update-blog/${id}`, {
+      const { data } = await axios.put(`https://blog-app-9riq.onrender.com/api/v1/blog/update-blog/${id}`, {
         title: inputs.title,
         description: inputs.description,
         image: inputs.image,
